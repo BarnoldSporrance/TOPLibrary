@@ -1,5 +1,3 @@
-
-
 // book contructor based on input from form
 function Book(name, author, pages, whetherRead) {
   // get name
@@ -32,9 +30,9 @@ function addBookToLibrary() {
 
   // run the display function
   displayBooks();
-      // run a clear form function   
+  // run a clear form function   
 }
-
+// new comment
 let addBook = document.getElementById("addButton");
 // add event listener
 addBook.addEventListener("click", addBookToLibrary);
@@ -49,22 +47,16 @@ function displayBooks(){
   cardHolder.className = 'cardHolder';
   document.body.appendChild(cardHolder);
 
- //loop through each item in the display
- myLibrary.forEach(function(book){
+  //loop through each item in the display
+  myLibrary.forEach(function(book){
   let bookCard = document.createElement('div');
   bookCard.className = "bookCard";
   bookCard.innerHTML = `Title: ${book.name}<br>Author: ${book.author}<br>No. of Pages: ${book.pages}<br>Previously read: ${book.whetherRead}`;
   cardHolder.appendChild(bookCard);
- });
- 
- 
- 
- 
-}
+ }); 
+} // end displayBooks
 
  
 
 
 
-/*
-Write a function that loops through the array and displays each book on the page. You can display them in some sort of table, or each on their own “card”. It might help for now to manually add a few books to your array so you can see the display.*/
