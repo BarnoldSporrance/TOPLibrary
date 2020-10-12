@@ -6,8 +6,9 @@
   <link rel = "stylesheet"  href = "styles.css" />
  
 </head>
-<body class="outline">    
-  <form>
+<body class="outline"> 
+ <div>
+  <form id = 'form' class="form">
     <label for="name">Book Name</label><br>
     <input type="text" id="name" name="name"><br>
 
@@ -23,9 +24,11 @@
     <input type="radio" id="readNo" name="read" value="no">
     <label for="readNo">No</label><br>
   </form>
-  <br><button id="addButton">Add</button>
+  <button id="addButton" class="addButton">Add</button>
+</div>
 
 
+  <div id="cardHolder" class="cardHolder"></div>
 
     
     

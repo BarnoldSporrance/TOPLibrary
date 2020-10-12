@@ -12,11 +12,6 @@ function Book(name, author, pages, whetherRead) {
 
 // Addds creates book from form input, adds to library
 function addBookToLibrary() {
-
-  let deletableDiv = document.getElementById('cardHolder');
-  deletableDiv.parentNode.removeChild(deletableDiv);
-
-
   // get all the values from the form
   let nameFromForm = document.getElementById("name").value;
   let authorFromForm = document.getElementById("author").value;
@@ -32,36 +27,34 @@ function addBookToLibrary() {
   // create a new object using the values form the form
   let bookHolder = new Book(nameFromForm, authorFromForm, pageNumberFromForm, whetherReadFromForm);
   myLibrary.push(bookHolder);
-
   // run the display function
   displayBooks();
-  // run a clear form function   
+  // run a clear form function
+  document.getElementById("form").reset(); 
 }
-// new comment
-let addBook = document.getElementById("addButton");
-// add event listener
-addBook.addEventListener("click", addBookToLibrary);
 
-let firstPlaceHolder = new Book ("Lord of the Flies", "William Golding", "216 pages", "yes");
-let myLibrary = [firstPlaceHolder];
-  
 // function to display cards
 function displayBooks(){ 
-  let cardHolder = document.createElement('div');
-  cardHolder.id='cardHolder';
-  cardHolder.className = 'cardHolder';
-  document.body.appendChild(cardHolder);
-
+  cardHolder.innerHTML="";
   //loop through each item in the display
   myLibrary.forEach(function(book){
   let bookCard = document.createElement('div');
   bookCard.className = "bookCard";
-  bookCard.innerHTML = `Title: ${book.name}<br>Author: ${book.author}<br>No. of Pages: ${book.pages}<br>Previously read: ${book.whetherRead}`;
+  bookCard.innerHTML = `<span style="font-family: 'Domine', serif;font-size: 1.5em;">${book.name}</span><span><br>Author: ${book.author}<br>Pages: ${book.pages}<br>Read: ${book.whetherRead}</span>`;
   cardHolder.appendChild(bookCard);
  }); 
 } // end displayBooks
 
- 
 
+let addBook = document.getElementById("addButton");
+// add event listener
+addBook.addEventListener("click", addBookToLibrary);
+
+
+let myLibrary = [];
+  
+
+
+ 
 
 
