@@ -12,6 +12,11 @@ function Book(name, author, pages, whetherRead) {
 
 // Addds creates book from form input, adds to library
 function addBookToLibrary() {
+
+  let deletableDiv = document.getElementById('cardHolder');
+  deletableDiv.parentNode.removeChild(deletableDiv);
+
+
   // get all the values from the form
   let nameFromForm = document.getElementById("name").value;
   let authorFromForm = document.getElementById("author").value;
