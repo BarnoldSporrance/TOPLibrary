@@ -7,7 +7,9 @@
  
 </head>
 <body class="outline"> 
- <div>
+  <button id="openMenu">Add New Book</button>
+ <div id="sidebar">
+  
   <form id = 'form' class="form">
     <label for="name">Book Name</label><br>
     <input type="text" id="name" name="name"><br>
@@ -20,19 +22,31 @@
 
     <legend>Already read?</legend>
     <input type="radio" id="readYes" name="read" value="yes">
-    <label for="readYes">Yes</label><br>
+    <label for="readYes">Yes</label>
     <input type="radio" id="readNo" name="read" value="no">
-    <label for="readNo">No</label><br>
+    <label for="readNo">No</label>
   </form>
   <button id="addButton" class="addButton">Add</button>
 </div>
 
-
   <div id="cardHolder" class="cardHolder"></div>
 
-    
-    
-   
-  <script src="script.js"> </script>
+
+  <body>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.23.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.23.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
   </body>
+
+
+  <script src="script.js"> </script>
+
+
+</body>
 </html>

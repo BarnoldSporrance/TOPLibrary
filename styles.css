@@ -7,20 +7,20 @@
     flex-wrap: wrap;
 }
 
-
 #cardHolder {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: 60%;
-  margin: auto;
+  margin-left: 150px;
   margin-top: 50px;
   
   flex-wrap: wrap;
 }
 
 .bookCard {
-  font-family: 'Roboto', sans-serif; 
+  font-family: 'Roboto', sans-serif;
+  position: relative;
   color: #ebebeb;
   border-style: solid;
   border-color: #43444D;
@@ -30,7 +30,7 @@
   width: 25%;
   margin: 30px;
   padding: 10px;
-  border-radius: 5%;
+  border-radius: 20px;
   line-height: 1.6;
   padding-top: 10px;
   box-shadow:
@@ -53,7 +53,7 @@
   min-width: 10%;
   margin: 30px;
   padding: 10px;
-  border-radius: 5%;
+  border-radius: 20px;
   padding-top: 10px;
   box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
@@ -64,6 +64,7 @@
     0 100px 80px rgba(0, 0, 0, 0.12)
   ;
 }
+
 
 .addButton{
     font-family: 'Roboto', sans-serif;
@@ -81,7 +82,7 @@
     margin: 10px;
     margin-left: 30px;
   
-  border-radius: 5%;
+  border-radius: 20px;
   box-shadow:
     0 2.8px 2.2px rgba(0, 0, 0, 0.034),
     0 6.7px 5.3px rgba(0, 0, 0, 0.048),
@@ -95,7 +96,69 @@
 input[type=text] {
     width: 90%;
     background-color: #ebebeb;
-    border-radius: 5%;
+    border-radius: 20px;
     border-style: none;
-    margin-bottom: 3px;
+    margin-bottom: 5px;
   }
+
+  #openMenu{
+    position: absolute;
+    left: 40px;
+    top: 80px;
+    z-index: 1;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #ebebeb;
+    padding-bottom: 10px;
+    padding-top:7px;
+    border-style: solid;
+    border-color: #43444D;
+    background-color: #43444D;
+    border-width: 1px;
+    height: 40px;
+    width: 150px;
+    margin: 10px;
+  border-radius: 20px;
+  box-shadow:
+    0 2.8px 2.2px rgba(0, 0, 0, 0.034),
+    0 6.7px 5.3px rgba(0, 0, 0, 0.048),
+    0 12.5px 10px rgba(0, 0, 0, 0.06),
+    0 22.3px 17.9px rgba(0, 0, 0, 0.072),
+    0 44.8px 33.4px rgba(0, 0, 0, 0.086),
+    0 100px 80px rgba(0, 0, 0, 0.12)
+  ;
+}
+
+.bookCardButton{
+    color: #ebebeb;
+    border-radius: 20px;
+    background-color: #43444D;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 1px;
+    height:30px;
+    width: 70px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+.toggleReadButton{
+    color: #ebebeb;
+    border-radius: 20px;
+    background-color: #43444D;
+    border-style: solid;
+    border-color: #ebebeb;
+    border-width: 1px;
+    height:30px;
+    width: 110px;
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+}
+  
