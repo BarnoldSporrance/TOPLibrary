@@ -162,3 +162,50 @@ input[type=text] {
     bottom: 10px;
 }
   
+.addButton:active {
+  background-color: #43444D;
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+  outline: none;
+} 
+
+.addButton:focus {
+    outline: none;
+}
+
+.toggleReadButton:active {
+  background-color: #43444D;
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+  outline: none;
+} 
+
+.toggleReadButton:focus {
+    outline: none;
+}
+
+.bookCardButton:active {
+  background-color: #43444D;
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+  outline: none;
+} 
+
+.bookCardButton:focus {
+    outline: none;
+}
+
+.openMenuButton:active {
+  background-color: #43444D;
+  box-shadow: 0 1px #666;
+  transform: translateY(2px);
+  outline: none;
+} 
+
+.openMenuButton:focus {
+    outline: none;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
